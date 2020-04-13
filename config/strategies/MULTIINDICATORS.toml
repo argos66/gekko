@@ -1,0 +1,38 @@
+trailPercentage = 15 
+sma_fast = 20 
+sma_slow = 50 
+sma_veryslow = 100
+
+[cci]
+constant = 0.015 
+history = 50 
+threshold_up = 200 
+threshold_down = -300
+
+[ppo]
+short = 10 
+long = 50 
+threshold_high = 3.0 
+threshold_low = -5.0
+
+[uo]
+[[uo.first]]
+weight = 4 
+period = 25
+
+[[uo.second]]
+weight = 2 
+period = 50
+
+[[uo.third]]
+weight = 1 
+period = 100
+
+threshold_high = 65 
+threshold_low = 25
+
+[rsi]
+interval = 14 
+threshold_high = 70
+threshold_low = 30
+

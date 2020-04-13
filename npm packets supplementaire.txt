@@ -1,0 +1,17 @@
+#Install / Update
+git pull
+npm install --only=production
+cd exchange
+npm install --only=production
+cd ..
+npm i cluster ichimoku lodash lodash.ismatch synaptic talib tulind convnetjs zero-fill stats-lite numbro mathjs cluster os gauss ws
+cd web/vue
+npm install
+npm run build
+cd ../..
+
+#Run
+node --max-old-space-size=8192 gekko --config config.js --ui
+
+#Backtest
+node --max-old-space-size=8192 gekko --config config.js --backtest
